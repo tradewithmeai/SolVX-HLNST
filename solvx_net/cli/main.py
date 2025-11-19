@@ -12,6 +12,10 @@ from solvx_net.core.logging import setup_logging, get_logger
 from solvx_net.core.database import init_database, create_tables, drop_tables
 from solvx_net.cli.pcap_commands import pcap_app
 from solvx_net.cli.device_commands import device_app
+from solvx_net.cli.alert_commands import alert_app
+from solvx_net.cli.detect_commands import detect_app
+from solvx_net.cli.score_commands import score_app
+from solvx_net.cli.api_commands import api_app
 
 app = typer.Typer(
     name="solvx",
@@ -23,6 +27,10 @@ console = Console()
 # Add subcommands
 app.add_typer(pcap_app, name="pcap")
 app.add_typer(device_app, name="devices")
+app.add_typer(alert_app, name="alerts")
+app.add_typer(detect_app, name="detect")
+app.add_typer(score_app, name="score")
+app.add_typer(api_app, name="api")
 
 
 @app.callback()

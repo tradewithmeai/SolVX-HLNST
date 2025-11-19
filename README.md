@@ -104,12 +104,12 @@ solvx_net/
 ## Development Phases
 
 - ✅ **Phase 1**: Core infrastructure (config, logging, DB, CLI)
-- 🚧 **Phase 2**: PCAP import and flow analysis
-- 📋 **Phase 3**: Device fingerprinting
-- 📋 **Phase 4**: Detection engines
-- 📋 **Phase 5**: Threat scoring
-- 📋 **Phase 6**: Web API and GUI
-- 📋 **Phase 7**: Live capture
+- ✅ **Phase 2**: PCAP import and flow analysis
+- ✅ **Phase 3**: Device fingerprinting
+- ✅ **Phase 4**: Detection engines (rogue devices, ARP spoofing, DNS leaks)
+- ✅ **Phase 5**: Threat scoring and risk assessment
+- ✅ **Phase 6**: REST API with FastAPI (Web UI guide provided)
+- 📋 **Phase 7**: Live packet capture
 - 📋 **Phase 8**: Plugin system
 - 📋 **Phase 9**: Virtual lab / PCAP generator
 
